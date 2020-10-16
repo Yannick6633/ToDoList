@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 body {
@@ -22,6 +22,7 @@ h1 {
     font-size: 2.8rem;
     text-transform: uppercase;
     color: #DF8E00;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
 
@@ -64,16 +65,16 @@ h1 {
     padding: 0;
     letter-spacing: none;
     height: 220px;
+    font-weight: bold;
 }
 .content li {
-    /*user-select: none;*/
     margin-bottom: 10px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     border: none;
     background: rgb(221, 215, 215);
-    color: #333333;
+    color: #333333;   
 }
 .content li i {
     color: rgb(221, 215, 215);
@@ -85,6 +86,3 @@ h1 {
 .content li i:hover {
     color: #333333;
 }
-
-
-
