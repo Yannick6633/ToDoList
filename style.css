@@ -5,13 +5,11 @@
 }
 
 body {
-    min-height: 450px;
     height: 100vh;
-    margin: 0;
-    background: #333333;
-    /*background: radial-gradient(ellipse farthest-corner at center top, #333333 30%,  #DF8E00 100%);*/
     display: flex;
     justify-content: center;
+    align-items: center;
+    background: #333333;
 }
 
 h1 {
@@ -27,11 +25,7 @@ h1 {
 }
 
 /****************************************/
- 
-.content {
-    margin: 50px;
-    padding: 100px 100px;
-}
+
 .content form {
     display: flex;
     justify-content: space-between;
@@ -64,7 +58,7 @@ h1 {
     margin-left: 0;
     padding: 0;
     letter-spacing: none;
-    height: 220px;
+    height: 400px;
     font-weight: bold;
 }
 .content li {
@@ -86,3 +80,41 @@ h1 {
 .content li i:hover {
     color: #333333;
 }
+
+/**************************************************/
+
+/*body ul .draggable {
+    will-change: transform;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    height: 50px;
+    list-style-type: none;
+    margin: 10px;
+    width: 250px; 
+    padding-left: 10px;
+    cursor: move;
+    transition: all 200ms;
+    user-select: none;
+    margin: 10px auto;
+    position: relative;
+  }
+  body ul .draggable:after {
+    content: "drag me";
+    right: 7px;
+    font-size: 10px;
+    position: absolute;
+    cursor: pointer;
+    line-height: 5;
+    transition: all 200ms;
+    transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.5);
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  body ul .draggable:hover:after {
+    opacity: 1;
+    transform: translate(0);
+  }
+  
+  .over {
+    transform: scale(1.1, 1.1);
+  }*/

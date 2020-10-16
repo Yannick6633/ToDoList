@@ -26,7 +26,7 @@
             <div class="content">
 
                 <form class="add">
-                  <input type="text" autocomplete="off" name="add" placeholder="Add items in your list">
+                  <input type="text" autocomplete="off" name="add" id="newTask" placeholder="Add items in your list">
                   <div class="input-buttons">
                     <a href="#0" class="add-todo">
                       <i class="fas fa-plus add"></i>
@@ -34,17 +34,21 @@
                   </div>
                 </form>
 
-                <ul class="todos">
-
-                </ul>
+                    <ul class="todos"> 
+                        <li class="draggable" draggable="true">JavaScript<i class="far fa-trash-alt delete"></i></li>
+                        <li class="draggable" draggable="true">CSS3<i class="far fa-trash-alt delete"></i></li>
+                        <li class="draggable" draggable="true">HTML5<i class="far fa-trash-alt delete"></i></li>
+                        <li class="draggable" draggable="true">Awesome<i class="far fa-trash-alt delete"></i></li>
+                    </ul>
 
             </div>
 
         </section>       
     </main>
     
-
     <script src="main.js"></script>
-    
+    <!--script src="drag.js"></script-->
+   
 </body>
 </html>
+                   
