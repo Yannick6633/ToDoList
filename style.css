@@ -117,6 +117,7 @@ body ul {
   body ul .draggable:hover:after {
     opacity: 1;
     transform: translate(0);
+    color: rgb(95, 156, 9);
   }
   
   .over {
