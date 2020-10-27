@@ -1,4 +1,4 @@
-let btn = document.querySelector('.add-todo');
+let btn = document.querySelector('.add');
 let remove = document.querySelector('.draggable');
 let dragSrcEl;
 let tasks = [];
@@ -55,17 +55,35 @@ let listItems = document.querySelectorAll('.draggable');
     addEventsDragAndDrop(item);
 });
 
+
 function addNewItem() {
-    let newItem = document.getElementById('newTask').nodeValue;
+    var newItem = document.querySelector(".input").value;
+    if (newItem != "") {
+        document.querySelector(".input").value = "";
+        let li = document.createElement("li");
+        let attr = document.createAttribute("draggable");
+        let ul = document.querySelector("ul");
+        li.className = "draggable";
+        attr.value = "true";
+        li.setAttributeNode(attr);
+        li.appendChild(document.createTextNode(newItem));
+        ul.appendChild(li);
+        addEventsDragAndDrop(li);
+    }
+}
+
+/*function addNewItem() {
+    let newItem = document.querySelector('.input').nodeValue;
     if (newItem) {
         tasks.push(newItem);
         localStorage.setItem('tasks', JSON.stringify(tasks))
         list();
     }
-}
+}*/
 
-function list() {
+/*function list() {
     tasks = JSON.parse(localStorage.getItem('tasks'));
+    // Faire une boucle if (localStorage)
     if(tasks) {
         tasks.forEach(task => {
             document.querySelector('.input').value = '';
@@ -80,7 +98,7 @@ function list() {
             addEventsDragAndDrop(li);
         })
     }
-}
+}*/
 
 btn.addEventListener('click', addNewItem);
-list();
+//list();

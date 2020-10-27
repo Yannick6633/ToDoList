@@ -5,14 +5,14 @@ const list = document.querySelectorAll('.todos li');
 
 let listLenght = list.lenght;
 
-const generateItems = (todo) => {
+/*const generateItems = (todo) => {
   
     const html =  `<li>
                     ${todo}
                     <i class="far fa-trash-alt delete"></i>
                   </li>`
 todoList.innerHTML += html;
-};
+};*/
 
 function addItems(evt) {
   evt.preventDefault();

@@ -90,7 +90,6 @@ h1 {
     height: 50px;
     list-style-type: none;
     margin: 10px;
-    width: 250px; 
     padding-left: 10px;
     cursor: move;
     transition: all 200ms;
